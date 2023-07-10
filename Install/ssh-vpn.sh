@@ -131,13 +131,13 @@ apt -y install nginx
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/myridwan/src/ipuk/ssh/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/Hunterscrip/v1/Install/nginx.conf"
 mkdir -p /home/vps/public_html
 /etc/init.d/nginx restart
 
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/myridwan/src/ipuk/ssh/newudpgw"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/Hunterscrip/v1/Install/newudpgw"
 chmod +x /usr/bin/badvpn-udpgw
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500' /etc/rc.local
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500' /etc/rc.local
@@ -279,15 +279,15 @@ netfilter-persistent reload
 
 # download script
 cd /usr/bin
-wget -O usernew "https://raw.githubusercontent.com/myridwan/src/ipuk/ssh/usernew.sh"
-wget -O hapus "https://raw.githubusercontent.com/myridwan/src/ipuk/ssh/hapus.sh"
-wget -O member "https://raw.githubusercontent.com/myridwan/src/ipuk/ssh/member.sh"
-wget -O renew "https://raw.githubusercontent.com/myridwan/src/ipuk/ssh/renew.sh"
-wget -O cek "https://raw.githubusercontent.com/myridwan/src/ipuk/ssh/cek.sh"
-wget -O add-host "https://raw.githubusercontent.com/myridwan/src/ipuk/ssh/add-host.sh"
-wget -O speedtest "https://raw.githubusercontent.com/myridwan/src/ipuk/ssh/speedtest_cli.py"
-wget -O xp "https://raw.githubusercontent.com/myridwan/src/ipuk/ssh/xp.sh"
-wget -O asu "https://raw.githubusercontent.com/myridwan/src/ipuk/asu.sh"
+wget -O usernew "https://raw.githubusercontent.com/Hunterscrip/v1/Install/usernew.sh"
+wget -O hapus "https://raw.githubusercontent.com/Hunterscrip/v1/Install/hapus.sh"
+wget -O member "https://raw.githubusercontent.com/Hunterscrip/v1/Install/member.sh"
+wget -O renew "https://raw.githubusercontent.com/Hunterscrip/v1/Install/renew.sh"
+wget -O cek "https://raw.githubusercontent.com/Hunterscrip/v1/Install/cek.sh"
+wget -O add-host "https://raw.githubusercontent.com/Hunterscrip/v1/Install/add-host.sh"
+wget -O speedtest "https://raw.githubusercontent.com/Hunterscrip/v1/Install/speedtest_cli.py"
+wget -O xp "https://raw.githubusercontent.com/Hunterscrip/v1/Install/xp.sh"
+wget -O asu "https://raw.githubusercontent.com/Hunterscrip/v1/asu.sh"
 wget -O menu "https://raw.githubusercontent.com/myridwan/src/ipuk/menu.sh"
 wget -O sshws "https://raw.githubusercontent.com/myridwan/src/ipuk/ssh/sshws.sh"
 wget -O trial "https://raw.githubusercontent.com/myridwan/src/ipuk/ssh/trial.sh"
