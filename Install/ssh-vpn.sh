@@ -298,13 +298,13 @@ wget -O ssgrpc-menu "https://raw.githubusercontent.com/Hunterscrip/v1/Install/ss
 wget -O cekws "https://raw.githubusercontent.com/Hunterscrip/v1/Install/cekws.sh"
 wget -O about "https://raw.githubusercontent.com/Hunterscrip/v1/Install/about.sh" 
 wget -O running "https://raw.githubusercontent.com/Hunterscrip/v1/Install/running.sh"
-wget -O banner "https://raw.githubusercontent.com/myridwan/src/ipuk/banner.sh"
-wget -O del-tr "https://raw.githubusercontent.com/myridwan/src/ipuk/xray/del-tr.sh"
+wget -O banner "https://raw.githubusercontent.com/Hunterscrip/v1/Install/banner.sh"
+wget -O del-tr "https://raw.githubusercontent.com/Hunterscrip/v1/Install/del-tr.sh"
 wget -O trial-menu "https://raw.githubusercontent.com/Hunterscrip/v1/Install/trial-menu.sh"
 wget -O info-menu "https://raw.githubusercontent.com/Hunterscrip/v1/Install/info-menu.sh"
-wget -O ceklim "https://raw.githubusercontent.com/myridwan/src/ipuk/ssh/ceklim.sh"
-wget -O cekusage "https://raw.githubusercontent.com/myridwan/src/ipuk/xray/cekusage.sh"
-wget -O cekxray "https://raw.githubusercontent.com/myridwan/src/ipuk/cekxray.sh"
+wget -O ceklim "https://raw.githubusercontent.com/Hunterscrip/v1/Install/ceklim.sh"
+wget -O cekusage "https://raw.githubusercontent.com/Hunterscrip/v1/Install/cekusage.sh"
+wget -O cekxray "https://raw.githubusercontent.com/Hunterscrip/v1/Install/cekxray.sh"
 chmod +x usernew
 chmod +x menu
 chmod +x hapus
