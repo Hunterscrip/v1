@@ -17,10 +17,10 @@ locality=none
 organization=none
 organizationalunit=none
 commonname=none
-email=admin@bahenol
+email=admin@rmblvpn
 
 # simple password minimal
-curl -sS https://raw.githubusercontent.com/myridwan/src/ipuk/ssh/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
+curl -sS https://raw.githubusercontent.com/Hunterscrip/v1/ssh/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
 chmod +x /etc/pam.d/common-password
 
 # go to root
@@ -247,13 +247,13 @@ echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 # banner /etc/issue.net
 sleep 1
 echo -e "[ ${green}INFO$NC ] Settings banner"
-wget -q -O /etc/issue.net "https://raw.githubusercontent.com/myridwan/src/ipuk/issue.net"
+wget -q -O /etc/issue.net "https://raw.githubusercontent.com/Hunterscrip/v1/issue.net"
 chmod +x /etc/issue.net
 echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 cat> /etc/issue.net << END
 <font color="red"><b>============================</b></font><br> 
-<font color="white"><b>        RIDWAN-STORE         </b></font><br> 
+<font color="white"><b>        RMBL-VPN         </b></font><br> 
 <font color="red"><b>============================</b></font>
 END
 
