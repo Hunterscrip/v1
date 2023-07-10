@@ -6,11 +6,11 @@ ns_domain_cloudflare1() {
 apt install jq curl -y
 clear
 
-read -rp "Sub Domain (Contoh: Myrid112): " -e sub
-DOMAIN=rstore-vpn.cloud
+read -rp "Sub Domain (Contoh: rmblvpn123): " -e sub
+DOMAIN=rmblvpn.xyz
 echo $sub > /root/cfku
-SUB_DOMAIN=${sub}.rstore-vpn.cloud
-CF_ID=ridwanstoreaws@gmail.com
+SUB_DOMAIN=${sub}.rmblvpn.xyz
+CF_ID=kadeknovi148@gmail.com
 CF_KEY=4ecfe9035f4e6e60829e519bd5ee17d66954f
 echo "rstore-vpn.cloud" > /root/domain
 echo $SUB_DOMAIN > /root/domain
