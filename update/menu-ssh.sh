@@ -4,8 +4,8 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 ###########- COLOR CODE -##############
 AKUN="AKUN SSH"
 TIMES="10"
-CHATID="1210833546"
-KEY="6006599143:AAEgstCAioq35JgX97HaW_G3TAkLKzLZS_w"
+CHATID="5557374381"
+KEY="6133932693:AAG7yZjGyVzYLkzMbEzJsNcvu4O2w4vela4"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 colornow=$(cat /etc/ssnvpn/theme/color.conf)
 NC="\e[0m"
@@ -40,7 +40,7 @@ echo -e " ${COLBG1}            • SSH PANEL MENU •          ${NC} "
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 read -p "   Username : " Login
 read -p "   Owner     : " OWNER
-read -p "Input Id Grup (-1001911868043) : " CHATIDGC
+read -p "Input Id Grup (-1001976214511) : " CHATIDGC
 CEKFILE=/etc/xray/ssh.txt
 if [ -f "$CEKFILE" ]; then
 file001="OK"
@@ -94,8 +94,8 @@ END
 <code>🌟Durasi  : $exp</code>
 <code>🌟Server  : $domen</code>
 <code>────────────────────</code>
-<i>Notifikasi Via RstoreBOT</i>
-<b>Tele : @kytxz</b>
+<i>Notifikasi Via Rmblvpn_bot</i>
+<b>Tele : @rmblvpn</b>
 "
 curl -s --max-time $TIMES -d "chat_id=$CHATIDGC&disable_web_page_preview=1&text=$TRX&parse_mode=html" $URL
 clear
@@ -135,7 +135,7 @@ echo -e "  OpenSSH    : $opensh"
 echo -e "  Dropbear   : $db" 
 echo -e "  SSH-WS     : $portsshws, 8880" 
 echo -e "  SSH-SSL-WS : $wsssl" 
-echo -e "  SSH-UDP    : 56-65545"
+echo -e "  SSH-UDP    : 1-65545"
 echo -e "  SSL/TLS    :$ssl" 
 echo -e "  UDPGW      : 7100-7300" 
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -155,7 +155,7 @@ echo -e "  OpenSSH    : $opensh"
 echo -e "  Dropbear   : $db" 
 echo -e "  SSH-WS     : $portsshws, 8880" 
 echo -e "  SSH-SSL-WS : $wsssl" 
-echo -e "  SSH-UDP    : 56-65545"
+echo -e "  SSH-UDP    : 1-65545"
 echo -e "  SSL/TLS    :$ssl" 
 echo -e "  UDPGW      : 7100-7300" 
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -173,11 +173,11 @@ portsshws=`cat ~/log-install.txt | grep -w "SSH Websocket" | cut -d: -f2 | awk '
 if [ -f "/etc/systemd/system/sshws.service" ]; then
 clear
 else
-wget -q -O /usr/bin/proxy3.js "https://raw.githubusercontent.com/myridwan/VVIP/ipuk/ssh/proxy3.js"
+wget -q -O /usr/bin/proxy3.js "https://raw.githubusercontent.com/Hunterscrip/ssh/proxy3.js"
 cat <<EOF > /etc/systemd/system/sshws.service
 [Unit]
 Description=WSenabler
-Documentation=https://FranataSTORE.MY.ID
+Documentation=https://vpnrmbl@gmail.com
 
 [Service]
 Type=simple
@@ -197,7 +197,7 @@ function start() {
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e " ${COLBG1}            • WEBSOCKET MENU •          ${NC} "
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" 
-wget -q -O /usr/bin/ssh-wsenabler "https://raw.githubusercontent.com/myridwan/VVIP/ipuk/ssh/sshws-true.sh" && chmod +x /usr/bin/ssh-wsenabler
+wget -q -O /usr/bin/ssh-wsenabler "https://raw.githubusercontent.com/Hunterscrip/v1/ssh/sshws-true.sh" && chmod +x /usr/bin/ssh-wsenabler
 systemctl daemon-reload >/dev/null 2>&1
 systemctl enable sshws.service >/dev/null 2>&1
 systemctl start sshws.service >/dev/null 2>&1
@@ -545,7 +545,7 @@ echo -e "  OpenSSH    : $opensh"
 echo -e "  Dropbear   : $db" 
 echo -e "  SSH-WS     : $portsshws, 8880" 
 echo -e "  SSH-SSL-WS : $wsssl" 
-echo -e "  SSH-UDP    : 56-65545"
+echo -e "  SSH-UDP    : 1-65545"
 echo -e "  SSL/TLS    :$ssl" 
 echo -e "  UDPGW      : 7100-7300" 
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
