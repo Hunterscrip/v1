@@ -258,7 +258,7 @@ cat> /etc/issue.net << END
 END
 
 #install bbr dan optimasi kernel
-wget https://raw.githubusercontent.com/myridwan/src/ipuk/ssh/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+wget https://raw.githubusercontent.com/Hunterscrip/v1/Install/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 
 # blockir torrent
 iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
@@ -288,9 +288,9 @@ wget -O add-host "https://raw.githubusercontent.com/Hunterscrip/v1/Install/add-h
 wget -O speedtest "https://raw.githubusercontent.com/Hunterscrip/v1/Install/speedtest_cli.py"
 wget -O xp "https://raw.githubusercontent.com/Hunterscrip/v1/Install/xp.sh"
 wget -O asu "https://raw.githubusercontent.com/Hunterscrip/v1/asu.sh"
-wget -O menu "https://raw.githubusercontent.com/myridwan/src/ipuk/menu.sh"
-wget -O sshws "https://raw.githubusercontent.com/myridwan/src/ipuk/ssh/sshws.sh"
-wget -O trial "https://raw.githubusercontent.com/myridwan/src/ipuk/ssh/trial.sh"
+wget -O menu "https://raw.githubusercontent.com/Hunterscrip/v1/update/menu.sh"
+wget -O sshws "https://raw.githubusercontent.com/Hunterscrip/v1/Install/sshws.sh"
+wget -O trial "https://raw.githubusercontent.com/Hunterscrip/v1/Install/trial.sh"
 wget -O ssh-menu "https://raw.githubusercontent.com/myridwan/vip/ipuk/menu_all/ssh-menu.sh"
 wget -O v2ray-menu "https://raw.githubusercontent.com/myridwan/vip/ipuk/menu_all/v2ray-menu.sh"
 wget -O trojan-menu "https://raw.githubusercontent.com/myridwan/vip/ipuk/menu_all/trojan-menu.sh"
