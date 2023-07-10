@@ -1,6 +1,6 @@
 [Unit]
-Description=Websocket-OpenSSH By Arh-Project
-Documentation=https://thekillstore.me
+Description=Websocket-OpenSSH By RMBL VPN 
+Documentation=https://rmblvpn.me
 After=network.target nss-lookup.target
 
 [Service]
